@@ -1,0 +1,23 @@
+.projectTile {
+  width: 240px;
+}
+
+.projectPhoto {
+  width: 240px;
+  height: 159.5px;
+  object-fit: cover;
+}
+
+.projectsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+
+.projectContainer {
+  height: 100vh;
+  background-color: #fff;
+}
+
+.red {
+  color: red;
+}

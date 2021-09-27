@@ -1,0 +1,36 @@
+.topnav {
+  background-color: #fff;
+  overflow: hidden;
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 47px;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #000;
+  text-align: center;
+  margin: 14px 8px;
+  padding: 0px 8px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #96ac2f;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #04aa6d;
+  color: white;
+}
+
+.logo {
+  height: auto;
+  width: 77px;
+  float: left;
+  margin: 14px 8px;
+  padding: 0px 8px;
+}
