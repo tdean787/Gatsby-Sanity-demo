@@ -11,6 +11,7 @@ import { useStaticQuery, graphql } from "gatsby"
 import "../../styles/global.css"
 import Header from "./header"
 import Footer from "./Footer"
+import * as styles from "../../styles/layout.module.css"
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -24,7 +25,7 @@ const Layout = ({ children }) => {
   `)
 
   return (
-    <div style={{ fontFamily: "Roboto, sans-serif" }}>
+    <div className={styles.layout} style={{ fontFamily: "Roboto, sans-serif" }}>
       <Header />
       {children}
       <Footer />

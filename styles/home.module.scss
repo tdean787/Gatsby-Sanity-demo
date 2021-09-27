@@ -6,10 +6,12 @@
   width: 100%;
   h1 {
     font-size: 6vw;
-    transform: translate(1vw, 10vh);
+    transform: translate(3vw, 10vh);
     color: #fff;
-    letter-spacing: 0.45rem;
+    letter-spacing: 0.3rem;
     font-weight: 700;
+    text-align: left;
+    font-family: "Montserrat", sans-serif;
   }
 }
 
@@ -40,6 +42,7 @@
   transition: 1s ease-in-out;
   transform: translate(1vw, 12vh);
   position: relative;
+  font-family: "Montserrat", sans-serif;
 }
 
 svg {

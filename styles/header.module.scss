@@ -16,12 +16,12 @@
   padding: 0px 8px;
   text-decoration: none;
   font-size: 17px;
-  transition: 1s;
+  transition: 0.3s;
 }
 
 .topnav a:hover {
   background-color: #22370e;
-  color: black;
+  color: #fff;
 }
 
 .logo {
@@ -36,4 +36,7 @@
   float: right;
   margin: 14px 8px;
   padding: 0px 8px;
+  i {
+    margin: 0 12px;
+  }
 }

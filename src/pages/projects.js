@@ -2,22 +2,23 @@ import React from "react"
 import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import * as styles from "../../styles/projects.module.css"
+import * as projectStyles from "../../styles/projects.module.scss"
 
 export default function projects({ data }) {
   if (data) {
     return (
       <Layout>
-        <div className={styles.projectContainer}>
+        <div className={projectStyles.projectContainer}>
           <h1>Shows & Allen Portfolio</h1>
           {console.log(data)}
           <div>
-            <div className={styles.projectsGrid}>
+            <div className={projectStyles.projectsGrid}>
               {data.allSanityProject.nodes.map(el => {
                 return (
-                  <div className={styles.projectTile}>
+                  <div className={projectStyles.projectTile}>
                     <h3>{el.name}</h3>
                     <img
-                      className={styles.projectPhoto}
+                      className={projectStyles.projectPhoto}
                       src={el.photo.asset.url}
                     ></img>
                     <p>{el.description}</p>
