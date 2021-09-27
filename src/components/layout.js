@@ -14,16 +14,6 @@ import Footer from "./Footer"
 import * as styles from "../../styles/layout.module.css"
 
 const Layout = ({ children }) => {
-  const data = useStaticQuery(graphql`
-    query SiteTitleQuery {
-      site {
-        siteMetadata {
-          title
-        }
-      }
-    }
-  `)
-
   return (
     <div className={styles.layout} style={{ fontFamily: "Roboto, sans-serif" }}>
       <Header />

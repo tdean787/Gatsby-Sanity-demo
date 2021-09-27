@@ -22,8 +22,11 @@ export default function about() {
           </li>
           <li>Site Planning </li>
           <li>Conceptual Design </li>
-          <li>Complete Site Design to include</li>
-          <li> Hardscape, Grading & Drainage, and Planting plans</li>
+          <li>Complete Site Design to include:</li>
+          <li>
+            {" "}
+            &nbsp; &nbsp;Hardscape, Grading & Drainage, and Planting plans
+          </li>
           <li>
             Design of Outdoor Structures (swimming pools, water features,
             arbors, cabanas, etc.)

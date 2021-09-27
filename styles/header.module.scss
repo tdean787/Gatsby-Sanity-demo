@@ -39,4 +39,21 @@
   i {
     margin: 0 12px;
   }
+  a {
+    float: right;
+    margin: unset;
+    padding: unset;
+  }
+  a:hover {
+    background-color: unset;
+    color: unset;
+  }
+}
+
+.links:hover {
+  color: #22370e !important;
+}
+
+.links {
+  transition: 0.3s;
 }

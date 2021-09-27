@@ -1,7 +1,6 @@
 import React from "react"
 import { graphql } from "gatsby"
 import Layout from "../components/layout"
-import * as styles from "../../styles/projects.module.css"
 import * as projectStyles from "../../styles/projects.module.scss"
 
 export default function projects({ data }) {
@@ -18,6 +17,7 @@ export default function projects({ data }) {
                   <div className={projectStyles.projectTile}>
                     <h3>{el.name}</h3>
                     <img
+                      alt={el.description}
                       className={projectStyles.projectPhoto}
                       src={el.photo.asset.url}
                     ></img>
