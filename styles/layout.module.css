@@ -1,3 +1,10 @@
-.layout {
-  height: 100vh;
+.site {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.siteContent {
+  flex-grow: 1;
+  background-color: #f2f2f2;
 }

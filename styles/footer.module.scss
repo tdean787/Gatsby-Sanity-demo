@@ -1,11 +1,12 @@
 .footer {
   padding: 1rem;
-  background-color: #22370e;
+  flex-shrink: 0;
+  background-color: #22370e !important;
   color: #fff;
   position: relative;
-  bottom: 0;
-  left: 0;
-  width: 100%;
+  // bottom: 0;
+  // left: 0;
+  // width: 100%;
   text-align: center;
   a {
     color: #fff;

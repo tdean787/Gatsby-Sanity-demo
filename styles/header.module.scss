@@ -1,12 +1,6 @@
-.topnav {
-  background-color: #fff;
-  overflow: hidden;
-  display: inline-block;
-  vertical-align: middle;
-  line-height: 47px;
-  width: 100%;
+.header {
+  flex-shrink: 0;
 }
-
 /* Style the links inside the navigation bar */
 .topnav a {
   float: left;

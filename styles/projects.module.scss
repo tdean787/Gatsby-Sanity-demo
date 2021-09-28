@@ -1,25 +1,42 @@
 .projectTile {
   width: 240px;
-  background-color: #fff;
+  // background-color: #fff;
   padding: 1em;
   margin: 12px;
+  text-align: center;
   h3 {
-    text-align: center;
     font-weight: 800;
-    margin-bottom: 12px;
+    position: absolute;
+    top: 75px;
+    z-index: 1;
+    color: #fff;
+    font-size: 1em;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    text-transform: uppercase;
   }
+}
+
+.projectHeader {
+  position: relative;
 }
 
 .projectPhoto {
   width: 100%;
   height: 159.5px;
   object-fit: cover;
+  filter: brightness(50%);
 }
 
-.projectsGrid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  justify-items: center;
+.projectList {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  position: relative;
+  // grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  // justify-items: center;
 }
 
 .projectContainer {
