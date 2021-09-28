@@ -7,6 +7,7 @@ export default function about() {
     <Layout>
       <div className={styles.aboutContainer}>
         <section className={styles.aboutText}>
+          <h1>About Shows & Allen</h1>
           <p>
             We are a landscape architecture firm offering a wide variety of
             design services. These services range from simple one-time
