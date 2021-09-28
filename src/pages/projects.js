@@ -1,5 +1,5 @@
 import React from "react"
-import { graphql } from "gatsby"
+import { graphql, Link } from "gatsby"
 import Layout from "../components/layout"
 import * as projectStyles from "../../styles/projects.module.scss"
 
@@ -9,23 +9,25 @@ export default function projects({ data }) {
       <Layout>
         <div className={projectStyles.projectContainer}>
           <h1>Shows & Allen Portfolio</h1>
-          {console.log(data)}
-          <div>
-            <div className={projectStyles.projectsGrid}>
-              {data.allSanityProject.nodes.map(el => {
-                return (
+          <div className={projectStyles.projectList}>
+            {data.allSanityProject.nodes.map(project => {
+              return (
+                <Link to={project.id}>
                   <div className={projectStyles.projectTile}>
-                    <h3>{el.name}</h3>
+                    <div className={projectStyles.projectHeader}>
+                      <h3>{project.name}</h3>
+                    </div>
+
                     <img
-                      alt={el.description}
+                      alt={project.description}
                       className={projectStyles.projectPhoto}
-                      src={el.photo.asset.url}
+                      src={project.photo.asset.url}
                     ></img>
-                    <p>{el.description}</p>
+                    {/* <p>{project.description}</p> */}
                   </div>
-                )
-              })}
-            </div>
+                </Link>
+              )
+            })}
           </div>
         </div>
       </Layout>
@@ -44,6 +46,7 @@ export const query = graphql`
     allSanityProject {
       nodes {
         name
+        id
         photo {
           asset {
             url
