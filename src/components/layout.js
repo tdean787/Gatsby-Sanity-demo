@@ -15,9 +15,9 @@ import * as styles from "../../styles/layout.module.css"
 
 const Layout = ({ children }) => {
   return (
-    <div className={styles.layout} style={{ fontFamily: "Roboto, sans-serif" }}>
+    <div className={styles.site} style={{ fontFamily: "Roboto, sans-serif" }}>
       <Header />
-      {children}
+      <main className={styles.siteContent}>{children}</main>
       <Footer />
     </div>
   )

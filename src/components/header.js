@@ -46,7 +46,13 @@ const Header = ({ siteTitle }) => (
         rel="stylesheet"
       ></link>
     </Helmet>
-    <Navbar collapseOnSelect expand="md" bg="light" variant="light">
+    <Navbar
+      className={headerStyles.header}
+      collapseOnSelect
+      expand="md"
+      bg="light"
+      variant="light"
+    >
       <Container>
         <Navbar.Brand href="/">
           <img
@@ -66,6 +72,9 @@ const Header = ({ siteTitle }) => (
             </Nav.Link>
             <Nav.Link className={headerStyles.links} href="#">
               Contact Us
+            </Nav.Link>
+            <Nav.Link className={headerStyles.links} href="/general">
+              General Info
             </Nav.Link>
             <NavDropdown title="Dropdown" id="collasible-nav-dropdown">
               <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
@@ -93,23 +102,6 @@ const Header = ({ siteTitle }) => (
         </Navbar.Collapse>
       </Container>
     </Navbar>
-    {/* <nav className={headerStyles.topnav}>
-      <img className={headerStyles.logo} src={"showsallenlogo.png"}></img>
-      <Link class="active" to="/">
-        Home
-      </Link>
-      <Link to="/about">About</Link>
-      <Link to="/projects">Projects</Link>
-
-      <div className={headerStyles.social}>
-        <i class="fab fa-facebook"></i>
-        <i class="fab fa-instagram"></i>
-
-        <Link target="_blank" href="https://showsandallen.sanity.studio/desk">
-          <i class="far fa-user-circle"></i>
-        </Link>
-      </div>
-    </nav> */}
   </header>
 )
 
